@@ -1,0 +1,266 @@
+<h1>The Food Pyramid</h1>
+    <div class="triangle">
+
+      
+      <div class="top" onclick="window.location='#grain'">
+        <h2 class="piramid_text">Grains</h2>
+      </div>
+
+      <div class="mid" onclick="window.location='#Fruits_and_vegetables'">
+        <h2 class="piramid_text">Fruits_and_vegetables</h2>
+      </div>
+      
+      <div class="mid2" onclick="window.location='#Meats,fish,beans_and_dairy'">
+        <h2 class="piramid_text">Meats, fish, beans and dairy</h2>
+      </div>
+
+      <div class="bottom" onclick="window.location='#Oils_and_Sweets'">
+        <h2 class="piramid_text">Oils and Sweets</h2>
+      </div>
+
+    </div>
+
+  </section>
+
+  <br><br><br><br>
+
+  
+  <section id="grain" class="nutrient">
+    <h1 class="title_text">Grains</h1>
+    <p class="context">
+      These foods provide complex carbohydrates, which are a good source of energy and provide much nutrition when unrefined. Examples include corn, wheat, pasta, and rice.
+    </p>
+  </section>
+
+  <section id="Fruits_and_vegetables" class="nutrient">
+    <h1 class="title_text">Fruits and vegetables</h1>
+    <p class="context">
+      A vegetable is a part of a plant consumed by humans that is generally savory but is not sweet. A vegetable is not considered a grain, fruit, nut, spice, or herb. For example, the stem, root, flower, etc., may be eaten as vegetables. Vegetables contain many vitamins and minerals; however, different vegetables contain different balances of micronutrients, so it is important to eat a wide variety of types. Fruits are the sweet-tasting seed-bearing parts of plants, or occasionally sweet parts of plants which do not bear seeds. These include apples, oranges, grapes, bananas, etc. Fruits are low in calories and fat and are a source of natural sugars, fiber and vitamins. Processing fruit when canning or making into juices may add sugars and remove nutrients.
+    </p>
+  </section>
+
+  <section id="Meats,fish,beans_and_dairy" class="nutrient">
+    <h1 class="title_text">Meats, fish, beans and dairy</h1>
+    <p class="context">
+      Dairy products are produced from the milk of mammals, usually but not exclusively cattle. They include milk, yogurt and cheese. Milk and its derivative products are a rich source of dietary calcium and also provide protein, phosphorus, vitamin A, and vitamin D. However, many dairy products are high in saturated fat and cholesterol compared to vegetables, fruits and whole grains, which is why skimmed products are available as an alternative. Historically, adults were recommended to consume three cups of dairy products per day. Meat is the tissue—usually muscle—of an animal consumed by humans. Since most parts of many animals are edible, there is a vast variety of meats. Meat is a major source of protein, as well as iron, zinc, and vitamin B12. Meats, poultry, and fish include beef, chicken, pork, salmon, tuna, shrimp, and eggs.
+
+The meat group is one of the major compacted food groups in the food guide pyramid. Since many of the same nutrients found in meat can also be found in foods like eggs, dry beans, and nuts, such foods are typically placed in the same category as meats, as meat alternatives. These include tofu, products that resemble meat or fish but are made with soy, eggs, and cheeses.
+    </p>
+  </section>
+
+  <section id="Oils_and_Sweets" class="nutrient">
+    <h1 class="title_text">Oils and Sweets</h1>
+    <p class="context">
+      A food pyramid's tip is the smallest part, so the fats and sweets in the top of the Food Pyramid should comprise the smallest percentage of the diet. The foods at the top of the food pyramid should be eaten sparingly because they provide calories, but not much in the way of nutrition. These foods include salad dressings, oils, cream, butter, margarine, sugars, soft drinks, candies, and sweet desserts. On the 1992–2005 pyramid, the fat circle and sugar triangle are scattered throughout the pyramid to represent the naturally-occurring fats and sugars in various foods. The idea of this is to reduce the temptation to eat so much junk food and excessive fats and sugars, as there is already enough fat and sugar in the rest of the diet.
+    </p>
+  </section>
+
+
+
+
+    
+
+<div class="container">
+  <div class="box">
+    <h1>BMI Calculator</h1>
+    <div class="content">
+      <div class="input">
+        <label for="height">Height(cm)</label>
+        <input type="number" id="height">
+      </div>
+      <div class="input">
+        <label for="weight">Weight(kg)</label>
+        <input type="number" id="weight">
+      </div>
+      <button id="calculate">Calculate BMI</button>
+    </div>
+    <div class="result">
+      <p>Your BMI is</p>
+      <div id="result">00.00</div>
+      <p class="comment"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="diet.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  .triangle {
+  position: relative;
+  height: 500px;
+  clip-path: polygon(50% 0%, 20% 100%, 80% 100%);
+}
+
+.triangle div {
+  position: absolute;
+  top: 0;
+  line-height: 100px;
+  font-size: 0.8em;
+  text-align: center;
+  background: #F5D3A5;
+  width: 100%;
+  height: 100px;
+  transition: all 0.6s;
+  color: #fff;
+}
+
+.triangle .top {
+  z-index: 1;
+}
+
+.triangle .mid {
+  top: 110px;
+  background: #E2AB68;
+}
+
+.triangle .mid2 {
+  top: 220px;
+  background: #C2985E;
+}
+
+.triangle .bottom {
+  top: 330px;
+  background: #7A4F25;
+}
+
+
+
+.top:hover{
+  background-color: #f6d7ae;
+  border: 2px solid #000000;
+  transition: 0.75s ease;
+}
+.mid:hover{
+  background-color: #e4b377;
+  border: 2px solid #000000;
+  transition: 0.75s ease;
+}
+.mid2:hover{
+  background-color: #c8a26e;
+  border: 2px solid #000000;
+  transition: 0.75s ease;
+}
+.bottom:hover{
+  background-color: #87603a;
+  border: 2px solid #000000;
+  transition: 0.75s ease;
+}
+
+
+.piramid_text{
+  bottom: 10;
+}
+
+
+
+
+
+
+
+
+/*bmi style*/
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 2000px;/*change this to change the position*/
+  transform: translate(-50%, 0%);
+}
+.box {
+  min-width: 400px;
+  background: #fafafa;
+  border-radius: 38px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 150px;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+  border-radius: 60px;
+  z-index: -1;
+}
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+}
+.content {
+  padding: 0 40px;
+}
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 28px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #009688;
+  width: 60%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+button#calculate {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: #009688;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: background 0.2s ease;
+}
+button#calculate:hover {
+  background: #009688;
+}
+.result {
+  padding: 30px 20px;
+}
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color: #009688;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 25px;
+}
+#comment {
+  color: #009688;
+  font-weight: 800;
+}

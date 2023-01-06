@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+  background: linear-gradient(rgba(46, 46, 46, 0.6),rgba(50, 50, 50, 0.7)),url("Image/relax_wallpaper.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 102vh;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: rgba(0, 150, 136, 0.9);
+}
+
+::-webkit-scrollbar {
+  width: 23px;
+  margin: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #009688;
+  border: 0.3em solid white;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #026C61; 
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+.index_li_a{
+    display: block;
+    color: #F0EDEE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+
+.underline_li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.7s;
+}
+
+.underline_li:hover::after{
+    width: 100%;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  height: 95%;
+}
+
+
+.title h1{
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 550;
+}
+
+.title h3{
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.quotes {
+  font-size: 25px;
+  color: black;
+  font-weight: 550;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.fix{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #e3e3e3;
+}
+.container{
+  display: flex;
+}
+
+.card{
+  height: 450px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+
+.card img{
+  height: 450px;
+  width: 300px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+
+
+.intro{
+  height: 70px;
+  width: 288px;
+  padding: 6px;
+  position: absolute;
+  bottom: -736px;
+  background: #000000;
+  opacity: 0.5;
+  color: white;
+  transition: 0.5s;
+}
+
+.intro h1{
+  margin: 10px;
+  font-size: 40px;
+}
+
+.intro p{
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+span{
+  font-weight: bold;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .intro{
+  height: 220px;
+  bottom: -736px;
+  background: #009688;
+  opacity: 1;
+}
+
+.card:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover img{
+  transform: scale(1.1) rotate(-3deg);
+}
+
+
+ .footer {
+    margin-top: 150px;
+    width: 100%;
+    padding: 30px 0px;
+    background: #333;
+    color: #efefef;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  .footer_inside{
+    margin-left: 3%;
+    display: flex;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  .footer div{
+    text-align: center;
+  }
+
+.icons {
+  background-color: #DEDADA;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  float: left;
+  box-shadow: 1px 1px 8px #DEDADA;
+}
+
+  .column_1{
+    margin-right: 5%;
+    margin-left: 34%;
+  }
+
+
+  .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .column_1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+
+
+  .sosial_icon{
+    margin-top: 10px;
+  }
+
+@media screen and (max-width: 620px) {
+  footer div h3{
+    font-size-adjust: 0.7;
+  }
+}
